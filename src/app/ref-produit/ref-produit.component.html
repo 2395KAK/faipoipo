@@ -1,0 +1,9 @@
+<h2>Liste des produits</h2>
+<div calss="container">
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let refProduit of listRefProduit; let i = index">
+        <h4>{{ refProduit.name }}</h4>
+    </li>
+</ul>
+</div>
+<a class="btn btn-primary" routerLink="edit-ref-produit" role="button">Ajouter un produit</a>

@@ -1,0 +1,7 @@
+<h2>Cambuse</h2>
+<p>Mis à jour : {{ lastUpdate | async | date: 'EEEE dd MMMM y' | uppercase }}</p>
+<ul class="list-group">
+    <app-produit *ngFor="let produit of cambuse; let i = index" [produitName]="produit.name"
+        [produitNb]="produit.nb" [index]="i" [id]="produit.id"></app-produit>
+</ul>
+<div><button class="btn btn-sm">Ajouter un produit</button></div>
