@@ -1,4 +1,5 @@
 import { Subject } from 'rxjs';
+import { RefTypeProduitService } from './ref-type-produit.service';
 
 export class RefProduitService {
 
@@ -7,7 +8,7 @@ export class RefProduitService {
     private refProduits = [
         {
             id: 1,
-            name: 'Igname'
+            name: 'Igname',
         },
         {
             id: 2,
